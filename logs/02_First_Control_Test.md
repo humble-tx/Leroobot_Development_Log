@@ -13,9 +13,9 @@
 
 <br><br><br><br>
 在其自带组件中发现管理所有刚体重力的开关
-
+<div align="center">
 <img width="486" height="453" alt="image" src="https://github.com/user-attachments/assets/74e4f735-6566-40f8-b4b9-d0a411a37e35" />
-
+</div>
 下坠问题解决，但是我们过一下还会回来再次解决这个问题
 
 

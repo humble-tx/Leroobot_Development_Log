@@ -1,5 +1,20 @@
 # Leroobot_Development_Log
 ## 选择unity作为Robotics Simulation Platform
-结合现有的硬件条件、知识基础和研究目标，Unity虽然再各方面无法比肩issac sam但确是目前最合适的平台。\
+手头的设备使用的是3060的显卡
+结合现有的硬件条件、知识基础和研究目标，Unity虽然再各方面无法比肩issac sam但确是目前最合适的平台。
 
 ## 将 SO-101 URDF 导入 Unity
+最开始是我想的很简单，只需要把带有关节信息的模型文件导入unity就完成了。没想到这一步却异常困难。\
+参考LLM的推荐，使用URDF Importer 0.5.2-preview插件\
+<img width="1817" height="844" alt="image" src="https://github.com/user-attachments/assets/e0ca8bed-9955-4f73-b645-dc23f1083987" />
+
+并将开源模型文档导入到project>assets文件夹中\
+<img width="1625" height="587" alt="image" src="https://github.com/user-attachments/assets/96e6c49c-7a0b-424d-9d12-2e0e74e057e5" />
+
+选择对应urdf模型文件右键点击Import Robot from Selected URDF file\
+<img width="653" height="1020" alt="屏幕截图 2026-06-09 150909" src="https://github.com/user-attachments/assets/75245928-0f4e-4ba2-ace5-fd704cd1a6d7" />
+
+后弹出下图内容，将Mesh Decomposer调制unity模式以减小模型碰撞体积细节和碎片文件，减轻cpu负担\
+<img width="756" height="794" alt="屏幕截图 2026-06-09 150921" src="https://github.com/user-attachments/assets/03fe21cd-41c0-410e-803f-d11cf01e3e65" />
+
+

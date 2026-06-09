@@ -30,9 +30,9 @@
 - 先给出的建议是点击 so101_new_calib 按 F 键对焦——但是相机飞过去仍然看不见东西
 - claude进一步让我展开 Hierarchy 层级查看子对象——发现层级结构是有的
 
--n发现底部console报错说模型未加载好
+- 发现底部console报错显示模型未加载好
 <img width="2559" height="1520" alt="image" src="https://github.com/user-attachments/assets/c9bdb5c4-a394-4dd4-9f06-36a0fe769631" />
-但并未发现未加载好的情况于是删掉空白object重新导入，
+等待加载完成，我也不知道是否加载好，只是看到所有文件都显示出来后，删掉旧后再次尝试导入，
 
 - 点进最深层的子对象看 Inspector——发现 Mesh Filter 里 mesh 和material是空的
 >这个结论的得出非常的折腾，最主要的问题是我完全不动导入Hierarchy里的文件结构和功能，可以从下面的一个分支的展开结构感受到这个开源模型文档的复杂程度

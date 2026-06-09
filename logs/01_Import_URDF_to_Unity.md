@@ -4,12 +4,12 @@
 结合现有的硬件条件、知识基础和研究目标，Unity虽然再各方面无法比肩issac sam但确是目前最合适的平台。
 
 ## 将 SO-101 URDF 导入 Unity
-最开始是我想的很简单，只需要把带有关节信息的模型文件导入unity就完成了。没想到这一步却异常困难。\
-### 参考LLM的推荐，使用URDF Importer 0.5.2-preview插件\
+最开始是我想的很简单，只需要把带有关节信息的模型文件导入unity就完成了。没想到这一步却异常困难。
+### 参考LLM的推荐，使用URDF Importer 0.5.2-preview插件
 <img width="1817" height="844" alt="image" src="https://github.com/user-attachments/assets/e0ca8bed-9955-4f73-b645-dc23f1083987" />
 
 
-### 并将开源模型文档导入到project>assets文件夹中\
+### 并将开源模型文档导入到project>assets文件夹中
 <img width="1625" height="587" alt="image" src="https://github.com/user-attachments/assets/96e6c49c-7a0b-424d-9d12-2e0e74e057e5" />
 
 

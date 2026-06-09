@@ -8,14 +8,22 @@
 参考LLM的推荐，使用URDF Importer 0.5.2-preview插件\
 <img width="1817" height="844" alt="image" src="https://github.com/user-attachments/assets/e0ca8bed-9955-4f73-b645-dc23f1083987" />
 
+
 并将开源模型文档导入到project>assets文件夹中\
 <img width="1625" height="587" alt="image" src="https://github.com/user-attachments/assets/96e6c49c-7a0b-424d-9d12-2e0e74e057e5" />
 
-选择对应urdf模型文件右键点击Import Robot from Selected URDF file\
-<img width="653" height="1020" alt="屏幕截图 2026-06-09 150909" src="https://github.com/user-attachments/assets/75245928-0f4e-4ba2-ace5-fd704cd1a6d7" />
 
-后弹出下图内容，将Mesh Decomposer调制unity模式以减小模型碰撞体积细节和碎片文件，减轻cpu负担\
-<img width="756" height="794" alt="屏幕截图 2026-06-09 150921" src="https://github.com/user-attachments/assets/03fe21cd-41c0-410e-803f-d11cf01e3e65" />
+选择对应urdf模型文件右键点击Import Robot from Selected URDF file
+<div align="center">
+<img width="50%" alt="屏幕截图 2026-06-09 150909" src="https://github.com/user-attachments/assets/75245928-0f4e-4ba2-ace5-fd704cd1a6d7" />
+</div>
+
+
+后弹出下图内容，将Mesh Decomposer调制unity模式以减小模型碰撞体积细节和碎片文件，减轻cpu负担
+<div align="center">
+  <img width="752" height="340" alt="image" src="https://github.com/user-attachments/assets/afa68618-b7db-407f-9798-cfa5c576684d" />
+</div>
+
 
 但是问题就出在这里!!!\
 导入后不显示模型,由于完全不动只能求助AI\

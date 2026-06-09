@@ -39,6 +39,36 @@ https://github.com/user-attachments/assets/78c6b0ca-e5f9-4a46-8706-dacc7b28dea0
 
 > Space Worm Robot（太空蛆机械臂）
 
+<br><br><br>
 
+ 在进一步探索中，我发现每一个关节的组件里都有一个名为 `Immovable` 的开关。
+
+> 如果只希望机械臂的底座固定在原地，而不是像之前那样整体漂浮或滑动，就可以将底座关节上的 `Immovable` 打开。
+>
+> 打开之后，底座能够稳定地固定在场景中，而上方的机械臂部分仍然可以继续进行关节运动。这样一来，机械臂的行为就更接近现实中的固定安装状态。
+<div align="center">
+<img width="507" height="464" alt="image" src="https://github.com/user-attachments/assets/18a568be-3b19-4610-903e-997c4f27bb5a" />
+</div>
+
+在调整 `Controller` 脚本之后，虚拟机械臂终于可以通过键盘进行控制。
+
+> 不过，虽然机械臂已经能够正常运动，但其实此时我对整个系统内部的工作方式仍然非常模糊。
+
+https://github.com/user-attachments/assets/6058375b-3c02-4240-bce2-7c7f6be521ec
+
+> 导入后的机械臂自带了大量脚本，而我并不清楚它们之间的关系和分工。根据目前的观察，真正频繁接触到的主要有：
+>
+> - `URDFRobot`
+> - `Controller`
+>
+> 剩下的目前还不需要做任何调整暂未接触
+> - `FKRobot`
+> - `UrdfPlugin`
+> - `UrdfVisual`
+> - `UrdfCollision`
+>
+> 其中，`Controller` 负责键盘控制，而其它脚本的作用当时仍然完全不清楚。我知道它们一定在整个机器人系统中承担着不同的职责，但对于它们如何协同工作、谁负责运动、谁负责显示、谁负责碰撞，我都还没有建立起完整的理解。
+>
+> 虽然机械臂已经开始“活”了起来，但我对于支撑它运行的内部结构仍然几乎一无所知。
 
 

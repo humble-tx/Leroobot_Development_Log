@@ -34,12 +34,30 @@ claude进一步让我展开 Hierarchy 层级查看子对象——发现层级结
 <img width="2559" height="1520" alt="image" src="https://github.com/user-attachments/assets/c9bdb5c4-a394-4dd4-9f06-36a0fe769631" />
 但并未发现未加载好的情况于是删掉空白object重新导入，
 
-点进最深层的子对象看 Inspector——发现 Mesh Filter 里 mesh 和material是空的
-这个结论的得出非常的折腾，最主要的问题是我完全不动导入Hierarchy里的文件结构和功能，可以从下面的一个分支的展开结构感受到这个开源模型文档的复杂程度
+点进最深层的子对象看 Inspector——发现 Mesh Filter 里 mesh 和material是空的\
+这个结论的得出非常的折腾，最主要的问题是我完全不动导入Hierarchy里的文件结构和功能，可以从下面的一个分支的展开结构感受到这个开源模型文档的复杂程度\
+<div align="center">
 <img width="611" height="845" alt="image" src="https://github.com/user-attachments/assets/4651a3bf-af0f-4121-8aaa-b72fa7a3e386" />
+</div>
 
-> 而询问 AI 的过程就更加繁琐了。
+按照claude给出的步骤，我开始检查导入 Unity 后的模型文件本身是否存在问题。
+> 这里最让我困惑的是，我一开始并不清楚自己导入 Unity 的到底算是 STL 模型，还是 URDF 结构。它并不是我原本想象的那种“一个零件对应一个 STL 文件”的简单关系。相反，每一个机械臂零件在 Unity 里又被拆分成了好几种文件类型。
 >
+> 从 Project 面板里看，每个模型大概会对应四类文件：
+>
+> 1. 一个像普通文件页面一样的图标，后缀是 `.part`；
+>
+> 2. 一个粉色的、带有大致形体轮廓的 `.prefab` 预制件；
+>
+> 3. 一个 `.stl` 文件，但因为我电脑里 STL 被 Bambu Studio 关联了，所以图标显示成了 Bambu Studio 的样子；
+>
+> 4. 一个或两个带网格图标的 `.asset` 文件。
+<img width="2250" height="768" alt="image" src="https://github.com/user-attachments/assets/316da2f4-efce-4fa3-bf4f-77c7faaf8d9e" />
+> 这和原始开源文档里的结构并不一样。原始文件夹里基本只有 `.part` 和 `.stl` 文件，但导入 Unity 后，Unity 又自动生成了 prefab 和 asset 等文件。
+>
+> 也就是说，我面对的并不是一个单纯的模型文件，而是 Unity 在导入过程中重新生成的一套资源结构。每个零件都被拆成了多个 Unity 内部资源，而我最开始并不知道这些文件分别代表什么，也不知道真正影响模型显示的是哪一个。
+
+
 > 由于 Claude 也不知道这个文件内部的具体结构是什么样的，它能看到的其实只有 Hierarchy 里面最外层的结构。比如它能看到某个对象前面有一个可以下拉的箭头，于是它知道下面应该还有一个层级，但它并不知道这个层级下面还有多少东西，也不知道真正需要找的组件到底藏在哪。
 >
 > 所以最开始，它让我去第一个层级截图，看有没有它需要的组件。我截给它，它说没有；然后让我再往下一层找，还是没有。就这样一层一层地往下。
@@ -54,8 +72,8 @@ claude进一步让我展开 Hierarchy 层级查看子对象——发现层级结
 >
 > 但是整个搜索过程，以及应该如何提问、为什么要这样找，我始终都是模糊的。我并没有真正理解发生了什么，只是在机械地重复
 
+这就是问题所在\
 <img width="2557" height="1529" alt="屏幕截图 2026-06-09 154009" src="https://github.com/user-attachments/assets/7301ce8f-df04-48dc-a4ef-be10425be418" />
-
-<img width="2559" height="1518" alt="屏幕截图 2026-06-09 154528" src="https://github.com/user-attachments/assets/55e7a0f8-499b-419a-a5ae-4d71800f5ffc" />
-<img width="2551" height="1519" alt="屏幕截图 2026-06-09 154523" src="https://github.com/user-attachments/assets/8b33691a-a9bc-42d6-98f6-1842ab292916" />
-<img width="2553" height="1518" alt="屏幕截图 2026-06-09 154518" src="https://github.com/user-attachments/assets/b84ef80f-cd11-4afb-8e3c-cf499e0b888b" />
+<div align="center">
+<img width="509" height="236" alt="image" src="https://github.com/user-attachments/assets/3cfc92f0-4d96-47f2-a887-74bb6273ecac" />
+</div>

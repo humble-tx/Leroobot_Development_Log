@@ -25,9 +25,19 @@
 > 它既有点像失重环境中的机械臂，又有点像一条在太空舱里缓慢蠕动的蛆。
 >
 > 没想到重力对于机器人运动的观感影响有这么大。
+>
+> 人对于“机械臂应该如何运动”的理解，其实很大程度上来自现实世界中的重力经验。
 
 https://github.com/user-attachments/assets/78c6b0ca-e5f9-4a46-8706-dacc7b28dea0
 
+拓展议题
+> Embodied cognition（具身认知）
+> 
+> Gravity as an invisible design material（重力作为一种不可见的设计材料）
+> 
+> 为什么失重环境中的运动会让人产生“生物感”
+
+> Space Worm Robot（太空蛆机械臂）
 
 
 

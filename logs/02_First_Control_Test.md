@@ -11,11 +11,24 @@
 运行后整个机械臂开始下坠，我怀疑是重力影响
 <img width="1431" height="810" alt="image" src="https://github.com/user-attachments/assets/9ce6d9cb-a2ee-463b-8459-e4a24b2713ba" />
 
-<br><br><br><br>
+<br><br><br>
 在其自带组件中发现管理所有刚体重力的开关
 <div align="center">
 <img width="486" height="453" alt="image" src="https://github.com/user-attachments/assets/74e4f735-6566-40f8-b4b9-d0a411a37e35" />
 </div>
 下坠问题解决，但是我们过一下还会回来再次解决这个问题
+
+<br><br><br>
+
+> 在关闭重力之后，机械臂不再受到下坠影响。由于只有关节运动而没有重量反馈，整个运动状态看起来非常奇怪。
+>
+> 它既有点像失重环境中的机械臂，又有点像一条在太空舱里缓慢蠕动的蛆。
+>
+> 没想到重力对于机器人运动的观感影响有这么大。
+
+https://github.com/user-attachments/assets/78c6b0ca-e5f9-4a46-8706-dacc7b28dea0
+
+
+
 
 
